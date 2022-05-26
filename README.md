@@ -53,3 +53,7 @@ $ python3 util/simulateBoard.py
 **注意** penalize or rule out impossible moves (when a column is full)
 
 save Qtable as csv
+
+
+# References  
+https://colab.research.google.com/drive/1N9CuTjHRZt27sbaMHEL3x4aTgn6AVY8F?usp=sharing
