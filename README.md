@@ -31,3 +31,25 @@ $$ Q(x_t, a), + \max _ a Q(x_{t+1}, a) $$
 $ pip install -r requirements.txt
 $ python3 util/simulateBoard.py
 ```
+  
+# pseudo code  
+
+先手盤のQテーブル
+
+ランダムに盤面を選択する
+そこから期待利益が最大のものを選ぶ（イコールであればランダム）
+盤面変化ー＞
+
+後手盤のQテーブルに移動
+後手盤の期待利益が最大のものを選ぶ（イコールであればランダム）
+盤面変化ー＞
+
+先手盤のQテーブルに移動
+
+
+->ゲーム終了
+リワードを割り引いて，遡ってQテーブルの選択肢にフィードバック
+
+**注意** penalize or rule out impossible moves (when a column is full)
+
+save Qtable as csv
