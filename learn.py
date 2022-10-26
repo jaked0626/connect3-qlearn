@@ -6,9 +6,9 @@ def load_q_table(filepath):
         qtable = [hash.strip() for hash in f.readlines() if hash != '']
     df = pd.DataFrame()
     df['board'] = qtable
+    df["left"] = 0
+    df["middle"] = 0
+    df["right"] = 0
 
     return df
-
-
-
 
